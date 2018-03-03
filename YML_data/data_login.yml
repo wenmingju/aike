@@ -6,6 +6,6 @@ Logindata:
     toast: 帐号不存在
   login_data2:
     phone: 18321733149
-    passwd: 123457
+    passwd: 213457
     expect: 密码错误
     toast: 密码错误
