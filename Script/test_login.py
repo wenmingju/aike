@@ -1,4 +1,4 @@
-import pytest
+import pytest,allure
 from Page.Pages import Page
 from Basic.init_driver import init_driver
 from Basic.Read_data import read_data
@@ -17,6 +17,7 @@ class Test_login(object):
         def teardown_class(self):
             self.driver.quit()
 
+        @allure.step('我是测试步骤001')
         @pytest.mark.parametrize("phone, passwd, expect, toast", read_login_data())
         def test_login(self,phone, passwd, expect, toast):
                 self.login_obj.input_phone(phone)
